@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #F7F6F6;
+    height: 200px; /* Aumento la altura para acomodar el contenido */
+    display: flex;
+    flex-direction: column; /* Mantengo la dirección de columna */
+    align-items: center; /* Centro horizontalmente */
+    position: relative; /* Posiciono relativamente para el ícono de menú */
+}
+
+.menu-icon-1 {
+    width: 18px;
+    height: 15px;
+    background: #3B4754;
+    position: absolute; /* Posición absoluta para alinearlo a la derecha */
+    top: 10px; /* Ajusto según sea necesario */
+    right: 10px; /* Ajusto según sea necesario */
+}
+
+
+
+
+
+#titulo_principal,
+#subtitulo_principal {
+    width: 441px;
+    height: 69px;
+    color: #3B4754;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 10px 0; /* Agrego un margen para espacio entre los elementos */
+}
+
+#subtitulo_principal { /* Agrego un formato de fuente */
+    font-style: italic;
+}
+
+.button {
+    /* Property 1=Default */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 13px;
+    gap: 10px;
+
+    position: relative; /* Cambié de absolute a relative para mejorar el posicionamiento */
+    width: 118px;
+    height: 36px;
+
+    background: #FFFFFF;
+    border-radius: 39.9634px;
+    margin-right: 10px; /* Espacio entre los botones */
+    color: #152FBB; /* Color de texto por defecto */
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el efecto hover */
+}
+
+.button:hover {
+    background-color: #28CAEE; /* Color de fondo al hacer hover */
+    color: #FFFFFF; /* Color de texto al hacer hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Cambié a row para disposición horizontal */
+    align-items: center;
+    justify-content: center; /* Aquí centré los botones horizontalmente */
+    position: relative; /* Cambié a relative para tener mejor posicionamiento */
+    top: 19px;
+}
+
+#botones_header {
+    margin-top: 20px; /* Agregué espacio entre la navegación y los botones de header */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra el contenedor de imágenes */
+    width: 100%;
+    height: calc(100vh - 200px); /* Ajusta la altura según el tamaño del header */
+}
+
+.images-wrapper {
+    display: flex;
+    width: 708px; /* Ancho total calculado */
+}
+
+.left-image, .right-images {
+    width: 50%; /* Cada contenedor ocupa la mitad del ancho */
+}
+
+.left-image img {
+    width: 100%; /* Ancho de la imagen izquierda */
+    height: auto; /* Mantén la proporción */
+}
+
+.right-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+}
+
+.right-images img {
+    width: 100%; /* Ancho total calculado */
+    height: 50%; /* Cada imagen ocupa la mitad de la altura */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+
+
+
+/* Inserto el calendario aquí */
+
+.calendar-container {
+    text-align: center;
+}
+
+.calendar {
+    width: 350px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 29px -7px rgba(63, 63, 63, 0.48);
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.calendar-header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar-day:hover {
+    background-color: #ddd !important;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-day.selected {
+    border: 1px solid #003879d0;
+    background-color: rgba(70, 201, 240);
+}
+
+.calendar-day.range {
+    border: 1px solid #007900d0;
+    background-color: rgba(86, 238, 86);
+}
+
+#prevBtn,
+#nextBtn {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #ddd !important;
+    transition: background-color 0.3s ease;
+}
+
+#selectedDates {
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 20px;
+}
+
+#currentMonth {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
