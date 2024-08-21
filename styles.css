@@ -85,17 +85,19 @@ header {
     margin-bottom: 50px;
 }
 
-/* Botones de "Ingresar" y "Registrarse": */
+/* Botones de "Ingresar" y "Registrarse" del index.html: */
 
-#botones_header {
+#botones_header_horizontal {
+
+    flex-direction: row;
     display: flex;
     gap: 20px; /* Space between buttons */
     margin-top: 20px; /* Agregué espacio entre la navegación y los botones de header */
 }
 
-.botones-registro {
+.botones-registro-horizontal {
+    
     padding: 10px 20px;
-    flex-direction: column;
     font-size: 16px;
     color: #fff;
     background-color: #007bff;
@@ -105,11 +107,39 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.botones-registro:hover {
+.botones-registro-horizontal:hover {
     background-color: #0056b3;
 }
 
-.botones-registro:active {
+.botones-registro-horizontal:active {
+    background-color: #003f7f;
+}
+/* Botones de "Ingresar" y "Registrarse" del registro.html: */
+#botones_header_vertical {
+
+    flex-direction: column;
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Agregué espacio entre la navegación y los botones de header */
+}
+
+.botones-registro-vertical {
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones-registro-vertical:hover {
+    background-color: #0056b3;
+}
+
+.botones-registro-vertical:active {
     background-color: #003f7f;
 }
 
