@@ -89,3 +89,4 @@ function formatDate(date) {
 
 renderCalendar();
 updateSelectedDates();
+

@@ -74,17 +74,96 @@ header {
     color: #FFFFFF; /* Color de texto al hacer hover */
 }
 
-.container {
+.buttoncontainer {
     display: flex;
     flex-direction: row; /* Cambié a row para disposición horizontal */
     align-items: center;
     justify-content: center; /* Aquí centré los botones horizontalmente */
-    position: relative; /* Cambié a relative para tener mejor posicionamiento */
+    position: static; /* Cambié a relative para tener mejor posicionamiento */
     top: 19px;
+    padding-bottom:20px;
+    margin-bottom: 50px;
 }
 
+/* Botones de "Ingresar" y "Registrarse": */
+
 #botones_header {
+    display: flex;
+    gap: 20px; /* Space between buttons */
     margin-top: 20px; /* Agregué espacio entre la navegación y los botones de header */
+}
+
+.botones-registro {
+    padding: 10px 20px;
+    flex-direction: column;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones-registro:hover {
+    background-color: #0056b3;
+}
+
+.botones-registro:active {
+    background-color: #003f7f;
+}
+
+/* El div de la imagen que aparece en el registro.html */
+
+.divespacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #3B4754;
+}
+
+.divespacio img {
+    max-width: 80%; /* Reduce the width to 80% of the container */
+    max-height: 100%; /* Maintain the aspect ratio */
+    justify-content: center;
+    align-content: center;
+    object-fit: contain; /* Ensure the image fits within the container */
+}
+
+/*CONFIGURACION FORMULARIO:*/
+/* Sección formulario */
+
+.form-container {
+    margin-top: 50px; /* Add some space between the buttons and the form */
+}
+
+div {
+    margin: auto;
+    text-align: center;
+    padding-top: 20px; /* Ajusta el espacio interior si lo necesitas */
+    margin-top: 50px; /* Crea espacio entre el header y el formulario */
+}
+
+
+#div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid blue;
+    width: 600px;
+    height: 800px;
+    padding-top: 20px;
+}
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid red;
+    width: 300px;
+    height: 600px;
+    padding-top: 20px;
 }
 
 .image-container {
