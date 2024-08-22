@@ -149,7 +149,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 200px;
     background-color: #3B4754;
 }
 
@@ -159,6 +159,7 @@ header {
     justify-content: center;
     align-content: center;
     object-fit: contain; /* Ensure the image fits within the container */
+    margin-bottom: 20px;
 }
 
 /*CONFIGURACION FORMULARIO:*/

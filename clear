@@ -16,7 +16,6 @@ credential.https://dev.azure.com.usehttppath=true
 init.defaultbranch=main
 user.name=Luis Cubillos
 user.email=luiscubillosq@outlook.com
-user.password=takeiteasyteacher;)
 core.repositoryformatversion=0
 core.filemode=false
 core.bare=false
