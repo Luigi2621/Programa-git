@@ -18,6 +18,8 @@
         <h1 id="titulo_principal"> Atlantic Dream Hotel</h1>
         <h1 id="subtitulo_principal">Aquí quieres descansar</h1>
 
+
+
         <nav class="buttoncontainer">
 
             <a class="button" onclick="href='index.html'">Hotel Homepage</a><!--Etiquetas Navegacion del sitio-->
@@ -30,6 +32,59 @@
             <!-- <a class="button" href="#Contacto">Contacto</a> -->
 
         </nav>
+
+        <h1>Ingreso</h1>
+        <h3>Ingresa con tus datos de usuario</h3>
+
+        <div id="Formulario Ingreso">
+            <form action="/action.php" method="post">
+                Name: <input name="name" type="text" /> 
+                <br />
+                Age: <input max="99" min="1" name="age" step="1" type="number" value="18" />
+                <br />
+                <select name="gender">
+                <option selected="selected" value="male">Male</option>
+                <option value="female">Female</option>
+                </select>
+                <br /> 
+                <input checked="checked" name="newsletter" type="radio" value="daily" /> 
+                Daily <input name="newsletter" type="radio" value="weekly" /> 
+                Weekly<br />
+                <br />
+                <label>
+                    <input name="terms" type="checkbox" value="tandc" />
+                Accept terms</label> <br />
+                <input type="submit" value="Submit" /></form>
+
+        </div>
+
+
+
+        <div id="botones_header_vertical">
+
+            <br>
+            <button class="botones-registro-vertical">
+                Ingresar        
+            </button>
+            <br><br>
+            <p>No te has registrado?</p>
+            <br><br><button class="botones-registro-vertical" onclick="location.href='registro.html'">
+                Registarse
+            </button>
+            <br>
+
+        </div>
+
+       
     </header>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+<script src="script.js"></script>
+
+    
+
 </body>
 </html>
