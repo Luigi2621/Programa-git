@@ -34,19 +34,22 @@
 
     </header>
 
-    <div class="divespacio">
+    <!-- <div class="divespacio">
         <img src="/resources/Imagen Hotel Atlantic Dream.jpg" alt="Atlantic Dream Hotel">
-      </div>
+      </div> -->
 
 
 
     <div class="form-container">
         <div id="div1">
-            <h2>Ingresa tus datos para realizar una reserva</h2>
+            <h2>Registra tus datos para realizar tu reserva</h2>
             <div id="div2">
                 <br>
-                Fecha de Nacimiento
-                <input type="text" id="txtFechaNacimiento">
+                <form action="/action_page.php">
+                    <label for="birthday">Fecha de Nacimiento:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <input type="submit" value="Seleccionar Fecha">
+                </form>
                 <br>
                 <br>
                 Nombres
@@ -67,6 +70,31 @@
                 Número de Documento
                 <input type="text" id="txtNumeroDocumento">
                 <br>
+
+                <form action="/action.php" method="post">
+                    <br />
+                    Edad: <input max="99" min="1" name="age" step="1" type="number" value="18" />
+                    <br />
+                    <select name="gender">
+                    <option selected="selected" value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                    </select>
+                    <br /> <br /> 
+                    Recibir Noticias<br /> 
+                    <input checked="checked" name="newsletter" type="radio" value="daily" />
+                    Semanalmente <input name="newsletter" type="radio" value="weekly" /> 
+                    Mensualmente<br />
+                    <input name="newsletter" type="radio" value="weekly" /> 
+                    No recibir noticias<br />
+                    <br />
+                    <label>
+                        <input name="terms" type="checkbox" value="tandc" />
+                    Acepto términos y Condiciones</label> <br />
+
+                    <label>
+                        <input name="terms" type="checkbox" value="tandc" />
+                    Estoy de acuerdo con la política de privacidad</label> <br />
+                    </form>
                 
                 <div id="botones_header_vertical">
 
